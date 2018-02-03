@@ -50,6 +50,7 @@ const getIndexBelowMax = (str, max) => {
   }
   return hash % max;
 };
+
 // trying this : https://medium.com/@mrjimbot/linked-list-data-structure-javascript-3268e103597
 // making linkedList class
 class LinkedList {
@@ -57,14 +58,7 @@ class LinkedList {
     this.head = null;
     this.tail = null;
   }
-  makeNode(value) {
-    let node = {};
-    node.value = value;
-    node.next = null;
-    return node;
-  }
 }
-
 module.exports = {
   LimitedArray,
   getIndexBelowMax,
