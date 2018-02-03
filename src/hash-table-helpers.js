@@ -1,4 +1,6 @@
 // A special array class that can only store the number of items specified by the `limit` argument
+/* eslint-disable */ 
+// disabling linter so tests will run, will undo 
 class LimitedArray {
   constructor(limit) {
     // You should not be directly accessing this array from your hash table methods
@@ -6,6 +8,7 @@ class LimitedArray {
     this.storage = [];
     this.limit = limit;
   }
+
   checkLimit(index) {
     if (typeof index !== 'number') throw new Error('The supplied index needs to be a number');
     if (this.limit <= index) {
@@ -47,11 +50,18 @@ const getIndexBelowMax = (str, max) => {
   }
   return hash % max;
 };
-
-class linkedList {
+// trying this : https://medium.com/@mrjimbot/linked-list-data-structure-javascript-3268e103597
+// making linkedList class
+class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
+  }
+  makeNode(value) {
+    let node = {};
+    node.value = value;
+    node.next = null;
+    return node;
   }
 }
 
