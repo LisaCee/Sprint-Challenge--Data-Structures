@@ -6,7 +6,6 @@ class LimitedArray {
     this.storage = [];
     this.limit = limit;
   }
-
   checkLimit(index) {
     if (typeof index !== 'number') throw new Error('The supplied index needs to be a number');
     if (this.limit <= index) {
@@ -48,6 +47,13 @@ const getIndexBelowMax = (str, max) => {
   }
   return hash % max;
 };
+
+class linkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+  }
+}
 
 module.exports = {
   LimitedArray,
