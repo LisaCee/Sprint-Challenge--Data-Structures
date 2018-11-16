@@ -1,6 +1,4 @@
 // A special array class that can only store the number of items specified by the `limit` argument
-/* eslint-disable */ 
-// disabling linter so tests will run, will undo 
 class LimitedArray {
   constructor(limit) {
     // You should not be directly accessing this array from your hash table methods
@@ -51,14 +49,6 @@ const getIndexBelowMax = (str, max) => {
   return hash % max;
 };
 
-// trying this : https://medium.com/@mrjimbot/linked-list-data-structure-javascript-3268e103597
-// making linkedList class
-class LinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-  }
-}
 module.exports = {
   LimitedArray,
   getIndexBelowMax,
