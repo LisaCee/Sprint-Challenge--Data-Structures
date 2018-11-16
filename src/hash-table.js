@@ -40,6 +40,7 @@ class HashTable {
   insert(key, value) {
     if (this.capacityIsFull()) this.resize();
     const index = getIndexBelowMax(key.toString(), this.limit);
+    const bucket = this.storage.get(index);
     let newNode = {
       value,
       next: null,

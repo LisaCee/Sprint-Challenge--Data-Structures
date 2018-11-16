@@ -1,5 +1,5 @@
 /* eslint-disable no-undef, no-prototype-builtins, no-trailing-spaces */
-const HashTable = require('../src/hash-table');
+const HashTable = require('../hash-table.js');
 
 let hashTable;
 
